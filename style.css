@@ -1,0 +1,116 @@
+table {
+    display: flex;
+    justify-content: center;
+}
+
+.wall {
+    /* valeur 1 */
+    background-image: url(./assets/wall.jpg);
+    width: 60px;
+    height: 60px;
+    padding : 0;
+}
+
+.empty {
+    /* valeur 0 */
+    background-color: white;
+    width: 60px;
+    height: 60px;
+}
+
+.player {
+    /* valeur 2 */
+    background-image: url(./assets/player.png);
+    background-repeat : no-repeat;
+    background-size : 60px 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.fog {
+    /* valeur 3 */
+    background-color: grey;
+    width: 60px;
+    height: 60px;
+}
+
+.goal {
+    /* valeur 4 */
+    background-image: url(./assets/goal.png);
+    background-repeat : no-repeat;
+    background-size : 60px 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 200px;
+    margin-right: auto;
+    margin-top : auto;
+}
+
+#upbutton, #downbutton, #leftbutton, #rightbutton {
+    background-image: url(./assets/arrow.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: transparent;
+    width: 60px;
+    height: 60px;
+}
+
+#upbutton {
+    grid-column: 2;
+    grid-row: 1;
+    transform: rotate(-90deg);
+}
+
+#downbutton {
+    grid-column: 2;
+    grid-row: 3;
+    transform: rotate(90deg);
+    margin-bottom : 10px;
+}
+
+#leftbutton {
+    grid-column: 1;
+    grid-row: 2;
+    transform: rotate(180deg);
+}
+
+#rightbutton {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    flex: 1;
+    max-width: 730px;
+}
+
+.centertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.fog {
+    background-color: grey; 
+}
